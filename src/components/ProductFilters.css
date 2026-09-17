@@ -1,0 +1,144 @@
+/* Product Filters Sidebar Styling */
+
+.fk-filters-sidebar {
+  width: 270px;
+  flex-shrink: 0;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+  height: fit-content;
+}
+
+.fk-filters-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.fk-filters-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212121;
+  margin: 0;
+}
+
+.fk-clear-btn {
+  background: transparent;
+  border: none;
+  color: #2874f0;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  letter-spacing: 0.3px;
+}
+
+.fk-clear-btn:hover {
+  text-decoration: underline;
+}
+
+.fk-filter-block {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.fk-filter-block:last-child {
+  border-bottom: none;
+}
+
+.fk-block-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fk-price-val {
+  color: #2874f0;
+  font-size: 11px;
+}
+
+/* Slider */
+.fk-slider {
+  width: 100%;
+  accent-color: #2874f0;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.fk-slider-bounds {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #878787;
+  font-weight: 500;
+}
+
+/* Checkboxes & Radios */
+.fk-checkbox-list,
+.fk-radio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fk-filter-checkbox,
+.fk-filter-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #212121;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fk-filter-checkbox input,
+.fk-filter-radio input {
+  accent-color: #2874f0;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+
+.fk-assured-badge-filter {
+  font-size: 12px;
+  font-weight: 800;
+  color: #007185;
+  background: #f0f8ff;
+  border: 1px solid #bce2f5;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.fk-assured-badge-filter em {
+  color: #2874f0;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.fk-link-clear {
+  background: transparent;
+  border: none;
+  color: #2874f0;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+@media (max-width: 900px) {
+  .fk-filters-sidebar {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}

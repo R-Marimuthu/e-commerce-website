@@ -1,0 +1,35 @@
+.hero {
+  border-bottom: 1px solid var(--border-soft);
+  padding: 64px 0 48px;
+}
+
+.hero__inner {
+  max-width: 720px;
+}
+
+.hero__title {
+  font-size: 48px;
+  line-height: 1.08;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.hero__sub {
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 480px;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 44px 0 32px;
+  }
+  .hero__title {
+    font-size: 34px;
+  }
+  .hero__sub {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,587 @@
+/* Flipkart Checkout Modal Styling */
+
+.fk-checkout-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 1300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: fkFadeIn 0.2s ease-out;
+}
+
+.fk-checkout-modal {
+  background: #f1f3f6;
+  width: 100%;
+  max-width: 1040px;
+  max-height: 92vh;
+  border-radius: 6px;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+}
+
+.fk-checkout-header {
+  background: #2874f0;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.fk-checkout-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.fk-secure-pill {
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.fk-checkout-close {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Grid */
+.fk-checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Steps column */
+.fk-steps-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fk-step-card {
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+.fk-step-head {
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #ffffff;
+}
+
+.fk-step-card.active .fk-step-head {
+  background: #2874f0;
+  color: #ffffff;
+}
+
+.fk-step-number {
+  background: #f0f0f0;
+  color: #2874f0;
+  font-size: 12px;
+  font-weight: 800;
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fk-step-card.active .fk-step-number {
+  background: #ffffff;
+  color: #2874f0;
+}
+
+.fk-step-title-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.fk-step-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.fk-step-card.completed .fk-step-title {
+  color: #878787;
+}
+
+.fk-step-done-desc {
+  font-size: 12px;
+  color: #212121;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.fk-step-check {
+  color: #388e3c;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.fk-change-step-btn {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  color: #2874f0;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.fk-step-body {
+  padding: 18px;
+  border-top: 1px solid #f0f0f0;
+  background: #ffffff;
+}
+
+/* Address Step */
+.fk-saved-addresses {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fk-addr-radio-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.fk-addr-radio-label.selected {
+  background: #f7f9fc;
+  border-color: #2874f0;
+}
+
+.fk-addr-radio-content {
+  flex: 1;
+}
+
+.fk-addr-type-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.fk-addr-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #212121;
+}
+
+.fk-addr-tag {
+  background: #f0f0f0;
+  color: #616161;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.fk-addr-phone {
+  font-size: 13px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.fk-addr-full {
+  font-size: 13px;
+  color: #555555;
+  margin: 4px 0 10px;
+  line-height: 1.4;
+}
+
+.fk-deliver-here-btn {
+  background: #fb641b;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.fk-add-new-addr-btn {
+  background: #ffffff;
+  border: 1px dashed #2874f0;
+  color: #2874f0;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+/* New Address Form */
+.fk-new-addr-form {
+  margin-top: 16px;
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.fk-form-heading {
+  margin: 0 0 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.fk-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.fk-form-row.full {
+  grid-template-columns: 1fr;
+}
+
+.fk-form-row input {
+  padding: 10px 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  font-size: 13px;
+  outline: none;
+}
+
+.fk-form-row input:focus {
+  border-color: #2874f0;
+}
+
+.fk-form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.fk-cancel-addr-btn {
+  background: transparent;
+  border: none;
+  color: #878787;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Step 3: Order Summary */
+.fk-summary-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fk-summary-item-row {
+  display: flex;
+  gap: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.fk-summary-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.fk-summary-info {
+  flex: 1;
+}
+
+.fk-summary-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #212121;
+  margin: 0 0 4px;
+}
+
+.fk-summary-qty {
+  font-size: 12px;
+  color: #878787;
+}
+
+.fk-summary-prices {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  margin-top: 2px;
+}
+
+.fk-summary-price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.fk-summary-mrp {
+  font-size: 12px;
+  color: #878787;
+  text-decoration: line-through;
+}
+
+.fk-summary-delivery {
+  font-size: 11px;
+  color: #388e3c;
+  display: block;
+  margin-top: 4px;
+}
+
+.fk-summary-footer {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fk-confirmation-email-note {
+  font-size: 12px;
+  color: #878787;
+  margin: 0;
+}
+
+.fk-continue-btn {
+  background: #fb641b;
+}
+
+/* Step 4: Payments */
+.fk-payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.fk-pay-method {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 14px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fk-pay-method.selected {
+  border-color: #2874f0;
+  background: #fafbfd;
+}
+
+.fk-pay-radio-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fk-pay-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.fk-pay-sub {
+  padding-left: 24px;
+}
+
+.fk-upi-apps {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 6px;
+}
+
+.fk-upi-app {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #424242;
+  cursor: pointer;
+}
+
+.fk-upi-hint {
+  font-size: 11px;
+  color: #388e3c;
+}
+
+.fk-card-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 320px;
+}
+
+.fk-card-inputs input {
+  padding: 8px 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.fk-card-inline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.fk-pay-now-btn {
+  background: #fb641b;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fk-pay-now-btn:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+/* Success Screen */
+.fk-order-success-screen {
+  background: #ffffff;
+  padding: 40px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fk-success-anim-wrap {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #e8f5e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  animation: fkPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes fkPop {
+  0% { transform: scale(0.3); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.fk-success-checkmark {
+  font-size: 36px;
+  color: #388e3c;
+  font-weight: 900;
+}
+
+.fk-success-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #212121;
+  margin: 0 0 6px;
+}
+
+.fk-success-id {
+  font-size: 14px;
+  color: #555555;
+  margin: 0 0 8px;
+}
+
+.fk-success-info {
+  font-size: 13px;
+  color: #878787;
+  margin: 0 0 24px;
+}
+
+.fk-success-card {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 16px 24px;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.fk-success-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #333333;
+}
+
+.fk-supercoins-reward {
+  margin-top: 6px;
+  padding-top: 10px;
+  border-top: 1px dashed #e0e0e0;
+  font-size: 13px;
+  color: #b78103;
+  background: #fff8e1;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.fk-success-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.fk-btn-orders {
+  background: #2874f0;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.fk-btn-continue {
+  background: transparent;
+  border: 1px solid #2874f0;
+  color: #2874f0;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .fk-checkout-grid {
+    grid-template-columns: 1fr;
+  }
+}

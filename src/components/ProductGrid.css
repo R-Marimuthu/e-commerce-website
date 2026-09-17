@@ -1,0 +1,136 @@
+/* Flipkart Product Grid Styling */
+
+.fk-grid-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sort Bar */
+.fk-sort-bar {
+  background: #ffffff;
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.fk-results-info {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.fk-results-category-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.fk-results-count {
+  font-size: 12px;
+  color: #878787;
+}
+
+.fk-sort-tabs {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.fk-sort-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.fk-sort-tab {
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  color: #212121;
+  cursor: pointer;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s;
+}
+
+.fk-sort-tab:hover {
+  color: #2874f0;
+}
+
+.fk-sort-tab.active {
+  color: #2874f0;
+  font-weight: 700;
+  border-bottom-color: #2874f0;
+}
+
+/* Products Grid */
+.fk-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* Empty State */
+.fk-empty-results {
+  background: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.fk-empty-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.fk-empty-results h3 {
+  font-size: 18px;
+  color: #212121;
+  margin: 0 0 6px;
+}
+
+.fk-empty-results p {
+  font-size: 13px;
+  color: #878787;
+  margin: 0 0 20px;
+}
+
+.fk-btn-reset-filters {
+  background: #2874f0;
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .fk-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .fk-products-grid {
+    grid-template-columns: 1fr;
+  }
+  .fk-sort-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .fk-sort-tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

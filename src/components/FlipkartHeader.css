@@ -1,0 +1,430 @@
+/* Flipkart Header Styling */
+
+.fk-navbar {
+  background-color: #2874f0;
+  height: 64px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.fk-nav-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Brand Logo */
+.fk-brand-col {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.fk-logo-wrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.fk-logo-text {
+  font-size: 22px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.fk-logo-plus {
+  font-size: 11px;
+  font-weight: 500;
+  font-style: italic;
+  color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-top: 1px;
+}
+
+.fk-logo-plus em {
+  color: #ffe500;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.fk-plus-star {
+  width: 10px;
+  height: 10px;
+}
+
+/* Search Bar */
+.fk-search-col {
+  flex: 1;
+  max-width: 580px;
+  position: relative;
+}
+
+.fk-search-form {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 38px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.fk-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #212121;
+  font-family: inherit;
+}
+
+.fk-search-input::placeholder {
+  color: #878787;
+}
+
+.fk-search-clear {
+  background: transparent;
+  border: none;
+  color: #878787;
+  font-size: 14px;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.fk-search-btn {
+  background: transparent;
+  border: none;
+  padding: 0 14px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #2874f0;
+  transition: background 0.15s;
+}
+
+.fk-search-btn:hover {
+  background-color: #f5f5f5;
+}
+
+.fk-search-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Autocomplete suggestions */
+.fk-search-suggestions {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  max-height: 360px;
+  overflow-y: auto;
+  z-index: 1050;
+  border: 1px solid #e0e0e0;
+}
+
+.fk-suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f3f6;
+  transition: background 0.15s;
+}
+
+.fk-suggestion-item:hover {
+  background-color: #f7f9fc;
+}
+
+.fk-suggestion-thumb {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.fk-suggestion-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.fk-suggestion-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #212121;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 340px;
+}
+
+.fk-suggestion-cat {
+  font-size: 11px;
+  color: #878787;
+}
+
+.fk-suggestion-price {
+  font-size: 13px;
+  font-weight: 700;
+  color: #2874f0;
+}
+
+/* Actions Column */
+.fk-actions-col {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* User & Login */
+.fk-user-wrap {
+  position: relative;
+}
+
+.fk-login-btn {
+  background: #ffffff;
+  color: #2874f0;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  padding: 6px 28px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.fk-login-btn:hover {
+  background: #f0f0f0;
+}
+
+.fk-user-btn {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.fk-user-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.fk-user-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ffe500;
+  color: #2874f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.fk-arrow-icon {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s;
+}
+
+.fk-arrow-icon.open {
+  transform: rotate(180deg);
+}
+
+/* Menu Dropdown */
+.fk-menu-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 10px;
+  background: #ffffff;
+  min-width: 220px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 8px 0;
+  z-index: 1050;
+  animation: fkFadeDown 0.15s ease-out;
+}
+
+@keyframes fkFadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fk-menu-header {
+  padding: 10px 16px;
+}
+
+.fk-menu-greeting {
+  font-size: 13px;
+  color: #212121;
+  margin: 0;
+}
+
+.fk-supercoins-pill {
+  display: inline-block;
+  background: #fff8e1;
+  color: #b78103;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-top: 4px;
+  border: 1px solid #ffe082;
+}
+
+.fk-menu-divider {
+  height: 1px;
+  background: #e0e0e0;
+  margin: 6px 0;
+}
+
+.fk-menu-item {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #212121;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.15s;
+}
+
+.fk-menu-item:hover {
+  background: #f7f9fc;
+  color: #2874f0;
+}
+
+.fk-menu-logout {
+  color: #d32f2f;
+}
+
+/* Seller Link */
+.fk-seller-link {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.15s;
+  white-space: nowrap;
+}
+
+.fk-seller-link:hover {
+  text-decoration: underline;
+}
+
+/* Wishlist and Cart buttons */
+.fk-nav-icon-btn,
+.fk-cart-btn {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.fk-nav-icon-btn:hover,
+.fk-cart-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.fk-icon-badge-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.fk-nav-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.fk-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff6161;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 800;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  border: 1px solid #ffffff;
+}
+
+.fk-badge-cart {
+  background-color: #ffe500;
+  color: #2874f0;
+}
+
+.fk-nav-label {
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .fk-seller-link {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .fk-nav-label {
+    display: none;
+  }
+  .fk-nav-container {
+    gap: 10px;
+    padding: 0 10px;
+  }
+}

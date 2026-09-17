@@ -1,0 +1,124 @@
+/* Flipkart Footer Styling */
+
+.fk-footer {
+  background-color: #172337;
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+.fk-footer-top {
+  border-bottom: 1px solid #454d5e;
+  padding: 40px 0;
+}
+
+.fk-footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.fk-footer-links-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 1.2fr 1.2fr;
+  gap: 24px;
+}
+
+.fk-footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fk-footer-heading {
+  font-size: 12px;
+  color: #878787;
+  font-weight: 700;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.fk-footer-col a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  transition: text-decoration 0.2s;
+}
+
+.fk-footer-col a:hover {
+  text-decoration: underline;
+}
+
+.fk-footer-address-col {
+  border-left: 1px solid #454d5e;
+  padding-left: 20px;
+}
+
+.fk-footer-address-col p {
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.fk-footer-bottom {
+  padding: 20px 0;
+  background-color: #172337;
+}
+
+.fk-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.fk-bottom-features {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.fk-bottom-feat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.fk-feat-icon {
+  color: #ffe500;
+}
+
+.fk-copyright {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.fk-payment-badges {
+  display: flex;
+  gap: 8px;
+}
+
+.fk-pay-card {
+  background: #28354a;
+  border: 1px solid #454d5e;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #e0e0e0;
+}
+
+@media (max-width: 992px) {
+  .fk-footer-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fk-footer-address-col {
+    border-left: none;
+    padding-left: 0;
+  }
+}
